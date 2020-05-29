@@ -10,7 +10,7 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '$(AzureSubscriptionID)'
+  azureSubscription: '30f6de9a-101f-4dcc-a632-cde504a6ed67'
   
   # Web app name
   webAppName: 'appd-appservice-java'
@@ -81,7 +81,7 @@ stages:
                     },
                     {
                     "name": "appdynamics.agent.applicationName",
-                    "value": "$(AppD_App_Name)",
+                    "value": "app-service-java-devops",
                     "slotSetting": true
                     }
                 ]
